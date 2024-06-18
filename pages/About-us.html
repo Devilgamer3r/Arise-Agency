@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Webpage</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+</head>
+<body>
+<section class="sub-header">
+        <nav>
+            <a href="index.html"><img src=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="bi bi-x-circle" onclick="hideMenu()"></i>
+              <ul>
+                <li><a href="../index.html">HOME</a></li> 
+                <li><a href="./why-us.html">WHY US?</a></li> 
+              </ul>
+            </div>
+            <i class="bi bi-list" onclick="showMenu()"></i>
+        </nav>
+    <h1>About Us</h1>   
+</section>
+
+<!-- about us content-->
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>We are your all in one marketing agency</h1>
+            <p>Welcome to vivrise, where innovation meets expertise, and results meet excellence. As a leading marketing agency, we take pride in being your one-stop destination for a diverse range of marketing solutions across all industries.
+               <br>
+                <b>Our Mission:</b>
+                At vivrise, our mission is simple yet profound – to empower businesses of all sizes and industries to thrive in the dynamic world of marketing. We believe in the transformative power of strategic and creative marketing, and our goal is to be your trusted partner in achieving unprecedented success.
+                <br>
+                <b>Why Choose Us: </b>
+                
+                Proven Track Record: Our success stories speak for themselves. We have a track record of delivering exceptional results for our clients.
+                Client-Centric Approach: Your success is our priority. We work collaboratively with you, ensuring that our strategies align with your business objectives.
+                Transparent Communication: Open and transparent communication is the cornerstone of our client relationships. You'll always be in the loop on the progress of your campaigns.
+                Partner with vivrise today and let us be the driving force behind your marketing success. Together, let's turn your vision into a marketing masterpiece!</p>
+            <a href="../index.html" class="hero-btn red-btn">Explore Now</a>
+        </div>
+        <div class="about-col">
+            <img src="about.jpg">
+        </div>
+    </div>
+</section>
+
+<section class="footer">
+    <h4>About Us</h4>
+         <div class="icons">
+            <a href="https://www.facebook.com/profile.php?id=61555244730492&mibextid=9R9pXO"><i class="bi bi-facebook"></i></a>
+            <i class="bi bi-twitter-x"></i>
+            <a href="https://www.instagram.com/vivrise_?igsh=MXBoc3JhdTJrd3NyeA=="><i class="bi bi-instagram"></i></a>
+            <i class="bi bi-linkedin"></i>
+         </div>
+         <p>Made by Vivrise<i class="bi bi-c-circle"></i></p>
+</section>
+
+
+<script>
+    
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+    
+</script>
+</body>
+</html>

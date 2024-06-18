@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Webpage</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+</head>
+<body>
+<section class="sub-header">
+        <nav>
+            <a href="index.html"><img src=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="bi bi-x-circle" onclick="hideMenu()"></i>
+              <ul>
+                <li><a href="../index.html">HOME</a></li> 
+                <li><a href="./About-us.html">ABOUT</a></li> 
+              </ul>
+            </div>
+            <i class="bi bi-list" onclick="showMenu()"></i>
+        </nav>
+    <h1>Why Us?</h1>   
+</section>
+
+<!-- why us content-->
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>Why us?</h1>
+            <p>Holistic Approach: We don't just tackle isolated tactics; we craft a synchronized strategy that amplifies your brand across various digital channels.
+                Experienced Team: Our experts bring a wealth of experience from diverse industries, ensuring a well-rounded perspective in every campaign.
+                Innovation: The digital landscape is ever-changing, and so are we. We're constantly evolving to bring you the latest tools and strategies for a competitive edge.
+                Client-Centric: Your success is our success. We work closely with you, keeping communication lines open and adapting strategies as your business grows.
+                Results-Driven: We're not satisfied with just 'good'; we aim for outstanding. Our goal is to drive tangible results that exceed your expectations.</p>
+            <a href="" class="hero-btn red-btn">Explore Now</a>
+        </div>
+        <div class="about-col">
+            <img src="about.jpg">
+        </div>
+    </div>
+</section>
+
+<section class="footer">
+    <h4>Why Us?</h4>
+         <div class="icons">
+            <a href="https://www.facebook.com/profile.php?id=61555244730492&mibextid=9R9pXO"><i class="bi bi-facebook"></i></a>
+            <i class="bi bi-twitter-x"></i>
+            <a href="https://www.instagram.com/vivrise_?igsh=MXBoc3JhdTJrd3NyeA=="><i class="bi bi-instagram"></i></a>
+            <i class="bi bi-linkedin"></i>
+         </div>
+         <p>Made by Vivrise<i class="bi bi-c-circle"></i></p>
+</section>
+
+
+<script>
+    
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+    
+</script>
+</body>
+</html>
